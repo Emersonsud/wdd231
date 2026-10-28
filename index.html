@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Emerson Dos Santos</title>
+  <meta name="description" content="Home page for my WDD 231 course work: about me and my progress through the Web and Computer Programming certificate.">
+  <meta name="author" content="Emerson Dos Santos">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <span>Emerson Dos Santos</span>
+    </a>
+    <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+  </header>
+
+  <nav id="primary-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="chamber/index.html">Chamber Project</a></li>
+      <li><a href="final/index.html">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <div class="box">
+        <p>Hi, my name is Emerson Dos Santos. I'm from Sao Paulo, Brazil. I'm a student currently working toward a Web and Computer Programming certificate. I love learning new technologies and I'm always looking for ways to improve my skills. I'm learning to build accessible and responsive websites with HTML, CSS and JavaScript.</p>
+        <p>This site collects my course projects. Below you can see the certificate courses I'm taking and the ones I've already completed.</p>
+      </div>
+    </section>
+
+    <section class="photo" aria-labelledby="photo-title">
+      <h2 id="photo-title">Student Photo</h2>
+      <div class="box">
+        <img src="images/emerson.webp" alt="Portrait of the student" width="320" height="320" loading="lazy">
+      </div>
+    </section>
+
+    <section class="courses" aria-labelledby="courses-title">
+      <h2 id="courses-title">Web Certificate Courses</h2>
+      <div class="filters">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+        <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+      </div>
+      <ul id="course-list"></ul>
+      <p id="credits" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/Emersonsud/wdd231" aria-label="GitHub (opens in a new tab)" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="" width="40" height="40"></a>
+      <a href="https://www.linkedin.com/in/yourlinkedinusername" aria-label="LinkedIn (opens in a new tab)" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="" width="40" height="40"></a>
+      <a href="https://x.com/yourxusername" aria-label="X (opens in a new tab)" target="_blank" rel="noopener noreferrer"><img src="images/x.svg" alt="" width="40" height="40"></a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> &bull; Emerson Dos Santos &bull; USA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
