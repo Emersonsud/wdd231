@@ -1,12 +1,14 @@
-#menu-button{display:none}
-#primary-nav{display:block;width:auto}
-#primary-nav ul{display:flex;gap:1.5rem}
-#primary-nav a{border-top:0;padding:.4rem .2rem}
-header{flex-wrap:nowrap}
+@media (min-width: 700px) {
+  #menu-button{display:none}
+  #primary-nav{display:block;width:auto}
+  #primary-nav ul{display:flex;gap:1.5rem}
+  #primary-nav a{border-top:0;padding:.4rem .2rem}
+  header{flex-wrap:nowrap}
 
-#members.grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  #members.grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 
-#members.list .card:nth-child(even){background:#eef3f8}
+  #members.list .card:nth-child(even){background:#eef3f8}
 
-footer{grid-template-columns:1fr 1fr;text-align:left}
-footer .footer-dev{text-align:right}
+  footer{grid-template-columns:1fr 1fr;text-align:left}
+  footer .footer-dev{text-align:right}
+}

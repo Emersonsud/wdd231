@@ -5,8 +5,8 @@
   --bg:#f5f7fa;
   --text:#1c1c1c;
   --white:#ffffff;
-  --heading-font:"Georgia",serif;
-  --body-font:"Helvetica Neue",Arial,sans-serif;
+  --heading-font:"Playfair Display",Georgia,serif;
+  --body-font:"Open Sans",Arial,sans-serif;
 }
 body{font-family:var(--body-font);background:var(--bg);color:var(--text);line-height:1.5}
 h1,h2,h3{font-family:var(--heading-font)}
@@ -17,7 +17,7 @@ header{background:var(--primary);color:var(--white);display:flex;flex-wrap:wrap;
 #menu-button{background:none;border:2px solid var(--white);color:var(--white);font-size:1.6rem;padding:.1rem .6rem;border-radius:4px}
 #primary-nav{width:100%;display:none}
 #primary-nav.open{display:block}
-#primary-nav a{display:block;padding:.7rem 0;color:var(--white);text-decoration:none;border-top:1px solid rgba(255,255,255,.25)}
+#primary-nav a{display:block;padding:.7rem 0;color:var(--white);text-decoration:none;border-top:1px solid #ffffff40}
 #primary-nav a:hover,#primary-nav a.active{color:var(--accent);font-weight:bold}
 
 /* Main */
@@ -29,7 +29,7 @@ main h1{color:var(--primary);text-align:center}
 
 /* Members */
 #members{display:grid;gap:1rem}
-.card{background:var(--white);border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.15);overflow:hidden;border-top:5px solid var(--secondary)}
+.card{background:var(--white);border-radius:8px;box-shadow:0 2px 6px #00000026;overflow:hidden;border-top:5px solid var(--secondary)}
 .card.level-2{border-top-color:#9aa5b1}
 .card.level-3{border-top-color:var(--accent)}
 .card img{width:100%;height:150px;object-fit:cover;background:#e3e8ee}
