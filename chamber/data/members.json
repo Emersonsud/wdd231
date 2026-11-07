@@ -1,0 +1,10 @@
+[
+  {"name":"Desert Bloom Café","address":"210 Fremont St, Las Vegas, NV 89101","phone":"(702) 555-0111","website":"https://www.desertbloomcafe.example","image":"desert-bloom-cafe.svg","membership":3,"tagline":"Locally roasted coffee & brunch"},
+  {"name":"Silver State Auto Repair","address":"845 S Main St, Las Vegas, NV 89101","phone":"(702) 555-0122","website":"https://www.silverstateauto.example","image":"silver-state-auto.svg","membership":2,"tagline":"Honest repairs since 1998"},
+  {"name":"Neon Lights Print Shop","address":"58 E Charleston Blvd, Las Vegas, NV 89104","phone":"(702) 555-0133","website":"https://www.neonprint.example","image":"neon-lights-print.svg","membership":2,"tagline":"Banners, signs & custom printing"},
+  {"name":"Mojave Fitness Studio","address":"1320 W Sahara Ave, Las Vegas, NV 89102","phone":"(702) 555-0144","website":"https://www.mojavefitness.example","image":"mojave-fitness.svg","membership":1,"tagline":"Group classes & personal training"},
+  {"name":"Red Rock Realty","address":"900 Rampart Blvd, Las Vegas, NV 89145","phone":"(702) 555-0155","website":"https://www.redrockrealty.example","image":"red-rock-realty.svg","membership":3,"tagline":"Your guide to Vegas real estate"},
+  {"name":"Sunrise Dental Care","address":"477 N Eastern Ave, Las Vegas, NV 89101","phone":"(702) 555-0166","website":"https://www.sunrisedental.example","image":"sunrise-dental.svg","membership":1,"tagline":"Family dentistry with a smile"},
+  {"name":"Lucky Seven Bookstore","address":"22 Paradise Rd, Las Vegas, NV 89109","phone":"(702) 555-0177","website":"https://www.luckyseven-books.example","image":"lucky-seven-books.svg","membership":1,"tagline":"New, used & rare books"},
+  {"name":"Oasis Landscaping","address":"3100 S Decatur Blvd, Las Vegas, NV 89102","phone":"(702) 555-0188","website":"https://www.oasislandscaping.example","image":"oasis-landscaping.svg","membership":2,"tagline":"Desert-friendly garden design"}
+]

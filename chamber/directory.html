@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Directory | Las Vegas Chamber of Commerce</title>
+  <meta name="description" content="Browse the member directory of the Las Vegas Chamber of Commerce: local businesses, contact details and membership levels.">
+  <meta name="author" content="Emerson Dos Santos">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="Directory | Las Vegas Chamber of Commerce">
+  <meta property="og:description" content="Discover the local businesses that make up the Las Vegas Chamber of Commerce.">
+  <meta property="og:image" content="https://emersonsud.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://emersonsud.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+  <script src="scripts/directory.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="Las Vegas Chamber logo" width="48" height="48">
+      <span>Las Vegas Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Member Directory</h1>
+    <div class="view-controls" role="group" aria-label="Choose layout">
+      <button id="grid" class="active" aria-pressed="true">Grid</button>
+      <button id="list" aria-pressed="false">List</button>
+    </div>
+    <section id="members" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Las Vegas Chamber of Commerce</h2>
+      <p>123 Main Street, Las Vegas, NV 89101</p>
+      <p><a href="tel:+17025550100">(702) 555-0100</a></p>
+      <p><a href="mailto:info@lvchamber.example">info@lvchamber.example</a></p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> Las Vegas Chamber of Commerce</p>
+      <p>Emerson Dos Santos</p>
+      <p>WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
