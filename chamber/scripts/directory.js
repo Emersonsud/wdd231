@@ -1,9 +1,9 @@
+import "./common.js";
+
 const membersUrl = "data/members.json";
 const container = document.querySelector("#members");
 const gridBtn = document.querySelector("#grid");
 const listBtn = document.querySelector("#list");
-const menuBtn = document.querySelector("#menu-button");
-const nav = document.querySelector("#primary-nav");
 
 const levels = { 1: "Member", 2: "Silver", 3: "Gold" };
 
@@ -50,13 +50,5 @@ function setView(view) {
 
 gridBtn.addEventListener("click", () => setView("grid"));
 listBtn.addEventListener("click", () => setView("list"));
-
-menuBtn.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", open);
-});
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
 
 getMembers();

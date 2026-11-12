@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Las Vegas Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Las Vegas Chamber of Commerce. See upcoming events, local weather and featured member businesses.">
+  <meta name="author" content="Emerson Dos Santos">
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="Home | Las Vegas Chamber of Commerce">
+  <meta property="og:description" content="Events, weather and featured businesses from the Las Vegas Chamber of Commerce.">
+  <meta property="og:image" content="https://emersonsud.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://emersonsud.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/home.js" type="module" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="Las Vegas Chamber logo" width="48" height="48">
+      <span>Las Vegas Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to the Las Vegas Chamber of Commerce</h1>
+
+    <section class="hero" aria-label="Featured">
+      <img src="images/hero-1200.webp"
+           srcset="images/hero-600.webp 600w, images/hero-1200.webp 1200w"
+           sizes="100vw" width="1200" height="500"
+           alt="Las Vegas skyline at sunset with mountains in the background"
+           fetchpriority="high">
+      <a href="join.html" class="cta">Join the Chamber</a>
+    </section>
+
+    <div class="home-grid">
+      <section class="panel" id="events">
+        <h2>Current Events</h2>
+        <ul>
+          <li><strong>Nov 19</strong> Business After Hours Mixer, 6:00 PM</li>
+          <li><strong>Dec 3</strong> Small Business Workshop, 9:00 AM</li>
+          <li><strong>Dec 10</strong> Holiday Networking Lunch, 12:00 PM</li>
+        </ul>
+      </section>
+
+      <section class="panel" id="weather">
+        <h2>Las Vegas Weather</h2>
+        <div id="weather-content">
+          <div class="weather-now">
+            <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="50" height="50">
+            <p><span id="temp">--°F</span> <span id="desc">Loading...</span></p>
+          </div>
+          <h3>3-Day Forecast</h3>
+          <ul id="forecast"></ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="spotlight-section">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Las Vegas Chamber of Commerce</h2>
+      <p>123 Main Street, Las Vegas, NV 89101</p>
+      <p><a href="tel:+17025550100">(702) 555-0100</a></p>
+      <p><a href="mailto:info@lvchamber.example">info@lvchamber.example</a></p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> Las Vegas Chamber of Commerce</p>
+      <p>Emerson Dos Santos</p>
+      <p>WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
