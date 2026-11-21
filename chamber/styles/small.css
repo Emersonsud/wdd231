@@ -70,3 +70,36 @@ main h2{color:var(--primary)}
 #desc{text-transform:capitalize}
 #forecast li{display:flex;justify-content:space-between;padding:.3rem 0;border-bottom:1px solid #dde3ea}
 #spotlights{display:grid;gap:1rem}
+
+/* Join + thank you pages */
+.join-layout{display:grid;gap:1.5rem}
+.req-note{font-size:.9rem;margin-bottom:1rem}
+.join-form label{display:block;font-weight:bold;margin-bottom:1rem}
+.join-form input,.join-form select,.join-form textarea{display:block;width:100%;margin-top:.35rem;padding:.6rem;border:2px solid #6b7785;border-radius:4px;font:inherit;font-weight:normal;background:var(--white);color:var(--text)}
+.join-form input:focus,.join-form select:focus,.join-form textarea:focus{outline:3px solid var(--accent);border-color:var(--primary)}
+.join-form button{background:var(--primary);color:var(--white);border:0;padding:.75rem 1.5rem;border-radius:6px;font-weight:bold;font-size:1rem}
+.join-form button:hover,.join-form button:focus-visible{background:var(--secondary);outline:3px solid var(--accent)}
+
+.level-list{display:grid;gap:1rem}
+.membership-card{background:var(--white);border-radius:8px;box-shadow:0 2px 6px #00000026;border-top:6px solid var(--secondary);padding:1rem;animation:card-in .8s ease-out both}
+.membership-card.np{border-top-color:#2f855a}
+.membership-card.bronze{border-top-color:#a8642a}
+.membership-card.silver{border-top-color:#9aa5b1}
+.membership-card.gold{border-top-color:var(--accent)}
+.membership-card:nth-child(2){animation-delay:.2s}
+.membership-card:nth-child(3){animation-delay:.4s}
+.membership-card:nth-child(4){animation-delay:.6s}
+.membership-card h3{color:var(--primary);margin-bottom:.25rem}
+.membership-card a{color:var(--secondary)}
+.price{font-weight:bold;margin-bottom:.5rem}
+@keyframes card-in{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.membership-card{animation:none}}
+
+dialog{width:min(90vw,460px);border:0;border-radius:8px;padding:1.25rem;box-shadow:0 8px 30px #00000066}
+dialog::backdrop{background:#000000b3}
+.modal-close{float:right;background:var(--primary);color:var(--white);border:0;border-radius:4px;font-size:1.4rem;line-height:1;padding:.3rem .65rem}
+.benefits{list-style:disc;padding-left:1.25rem;margin:.75rem 0 0}
+
+.summary{display:grid;gap:.25rem 1rem;margin:1rem 0 0}
+.summary dt{font-weight:bold;color:var(--primary)}
+.summary dd{margin:0 0 .75rem;overflow-wrap:anywhere}

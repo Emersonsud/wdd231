@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | Las Vegas Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying for membership in the Las Vegas Chamber of Commerce.">
+  <meta name="author" content="Emerson Dos Santos">
+  <meta property="og:title" content="Thank You | Las Vegas Chamber of Commerce">
+  <meta property="og:description" content="Your membership application has been received.">
+  <meta property="og:image" content="https://emersonsud.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://emersonsud.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/thankyou.js" type="module" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">
+      <img src="images/favicon.svg" alt="Las Vegas Chamber logo" width="48" height="48">
+      <span>Las Vegas Chamber of Commerce</span>
+    </a>
+    <button id="menu-button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Applying!</h1>
+    <section class="panel">
+      <h2>Application Received</h2>
+      <p id="thanks-message">We have received your membership application. A chamber representative will contact you soon.</p>
+      <dl class="summary">
+        <dt>First Name</dt><dd id="out-fname"></dd>
+        <dt>Last Name</dt><dd id="out-lname"></dd>
+        <dt>Email</dt><dd id="out-email"></dd>
+        <dt>Mobile Phone</dt><dd id="out-phone"></dd>
+        <dt>Business</dt><dd id="out-organization"></dd>
+        <dt>Submitted</dt><dd id="out-timestamp"></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Las Vegas Chamber of Commerce</h2>
+      <p>123 Main Street, Las Vegas, NV 89101</p>
+      <p><a href="tel:+17025550100">(702) 555-0100</a></p>
+      <p><a href="mailto:info@lvchamber.example">info@lvchamber.example</a></p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="year"></span> Las Vegas Chamber of Commerce</p>
+      <p>Emerson Dos Santos</p>
+      <p>WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
