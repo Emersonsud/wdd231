@@ -7,7 +7,8 @@ document.querySelector("#timestamp").value = new Date().toISOString();
 document.querySelectorAll("[data-modal]").forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    document.getElementById(link.dataset.modal).showModal();
+    const modal = document.getElementById(link.dataset.modal);
+    modal.showModal();
   });
 });
 
